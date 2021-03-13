@@ -1,0 +1,51 @@
+/* Reset do CSS */
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mali', sans-serif;
+    font-size: 16px; /* 1rem */
+}
+
+/* Fundo */
+body {
+    background-image: url(/img/bg_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Quadro principal */
+.wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+}
+header img { 
+    display: block;
+    margin-right: 1rem;
+    width: 90px;
+    height: 90px;
+}
+header h1 {
+    margin: 0;
+}
+header small {
+    display: block;
+font-size: .8rem;
+}
