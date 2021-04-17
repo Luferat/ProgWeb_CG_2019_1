@@ -17,14 +17,14 @@
 <?php
 
 // Obtém lista de redes sociais, uma por vez
-foreach($T['social'] as $socialName => $socialLink ) :
+foreach($T['social_'] as $socialName => $socialLink ) :
 
     // Formata ícone do item
     $socialIcon = "<i class=\"fab fa-{$socialName}-square fa-fw\"></i>";
 
     // Formata nome do item
     $socialFaceName = ucfirst($socialName);
-    
+
     // Exibe item na lista
     echo "\t<li><a href=\"{$socialLink}\" target=\"_blank\">{$socialIcon}<span>{$socialFaceName}</span></a></li>\n";
 
