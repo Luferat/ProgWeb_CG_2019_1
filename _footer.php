@@ -1,3 +1,7 @@
+<?php
+/***** RODAPÉ DO TEMPLATE DAS PÁGINAS *****/
+?>
+
 </main>
 
 <footer>
@@ -10,10 +14,22 @@
 
         <div class="menu-social">
             <ul>
-                <li><a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-square fa-fw"></i><span>Facebook</span></a></li>
-                <li><a href="http://facebook.com" target="_blank"><i class="fab fa-youtube-square fa-fw"></i><span>Youtube</span></a></li>
-                <li><a href="http://facebook.com" target="_blank"><i class="fab fa-twitter-square fa-fw"></i><span>Twitter</span></a></li>
-                <li><a href="http://facebook.com" target="_blank"><i class="fab fa-github-square fa-fw"></i><span>GitHub</span></a></li>
+<?php
+
+// Obtém lista de redes sociais, uma por vez
+foreach($T['social'] as $socialName => $socialLink ) :
+
+    // Formata ícone do item
+    $socialIcon = "<i class=\"fab fa-{$socialName}-square fa-fw\"></i>";
+
+    // Formata nome do item
+    $socialFaceName = ucfirst($socialName);
+    
+    // Exibe item na lista
+    echo "\t<li><a href=\"{$socialLink}\" target=\"_blank\">{$socialIcon}<span>{$socialFaceName}</span></a></li>\n";
+
+endforeach;
+?>
             </ul>
         </div>
         <div class="menu-tools">

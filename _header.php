@@ -1,5 +1,7 @@
 <?php
 
+/***** CABEÇALHO DO TEMPLATE DAS PÁGINAS *****/
+
 // Processa tag <title></title>
 if ($T['pageTitle'] == '') {
 

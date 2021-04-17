@@ -1,6 +1,5 @@
 <?php
-
-
+/***** CONFIGURAÇÕES DA APLICAÇÃO *****/
 
 /* Configurações das páginas do site */
 
@@ -8,9 +7,9 @@ $T = array (
     'pageTitle' => '',  // Título padrão das páginas
     'pageCSS' => '', // CSS padrão das páginas
     'pageJS' => '', // JavaScript padrão das páginas
-    'siteName' => 'Joca', // Nome do site
-    'siteFullName' => 'O Joca',
-    'siteSlogan' => 'Lindo como pipoca.', // Slogan do site
+    'siteName' => 'Fuinhas', // Nome do site
+    'siteFullName' => 'Fuinhas',
+    'siteSlogan' => 'Futuca onde não deve.', // Slogan do site
     'siteLogo' => '/img/logo_01.jpg', // Logotipo do site
     'social' => array (
         'facebook' => 'http://facebook.com/fuinhas',
