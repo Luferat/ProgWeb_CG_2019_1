@@ -43,8 +43,7 @@ require_once ('_header.php');
 
 ?>
 
-<article>
-    
+<article>    
 
 </article>
 

@@ -1,36 +1,40 @@
 article > small {
-    display: block;
-    text-align: right;
+  display: block;
+  text-align: right;
 }
 
 .article {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  cursor: pointer;
+  font-size: 0.8rem;
 }
 
 .article img {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin-right: 1rem;
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.article div {
+  padding: 0.5rem;
 }
 
 .article h3 {
-    margin: 0;
-    margin-bottom: .5rem;
-
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .article:nth-child(even) {
-    background: rgba(0,0,0,.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .article:nth-child(odd) {
-    background: rgba(0,0,0,.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .article:hover {
-    background: rgba(0,0,0,.15);
+  background: rgba(0, 0, 0, 0.15);
 }

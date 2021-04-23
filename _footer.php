@@ -20,7 +20,7 @@
 foreach($T['social_'] as $socialName => $socialLink ) :
 
     // Formata ícone do item
-    $socialIcon = "<i class=\"fab fa-{$socialName}-square fa-fw\"></i>";
+    $socialIcon = "<i class=\"fab fa-{$socialName} fa-fw\"></i>";
 
     // Formata nome do item
     $socialFaceName = ucfirst($socialName);

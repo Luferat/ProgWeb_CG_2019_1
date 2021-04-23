@@ -38,6 +38,7 @@ if ($T['pageJS'] == '') {
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="icon" href="<?php echo $T['favicon'] ?>">
     <?php echo $tagCSS ?>
     <title><?php echo $tagTitle ?></title>
 </head>
