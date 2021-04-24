@@ -73,7 +73,6 @@ if ($res->num_rows > 0) {
     while ($more = $res->fetch_assoc()) {
 
         $artAuthor .= "<li><a href=\"/view.php?{$more['art_id']}\">{$more['art_title']}</a></li>";
-
     }
     
     $artAuthor .= "</ul>";
