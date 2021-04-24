@@ -33,8 +33,51 @@ INNER JOIN `authors` ON art_author = aut_id
 WHERE art_id = {$id} AND art_status = 'ativo' AND art_date <= NOW()
 ";
 
-print_r($sql);
-exit();
+$res = $conn->query($sql);
+$art = $res->fetch_assoc();
+
+// Gera view em HTML
+$article = <<<HTML
+
+<h2>{$art['art_title']}</h2>
+<small class="autor-date">Por {$art['aut_name']} em {$art['dataBr']}.</small>
+{$art['art_text']}
+
+<p class="btn-arts"><a href="/index.php">Lista de Artigos</a></p>
+
+HTML;
+
+$artAuthor = <<<HTML
+
+<h4 class="art-autor">
+    <a href="{$art['aut_link']}" target="_blank">
+        <img class="flush" src="{$art['aut_image']}" alt="{$art['aut_name']}">
+        {$art['aut_name']}
+    </a>
+</h4>
+
+HTML;
+
+// Obtém outros artigos do mesmo autor
+$sql = "
+SELECT `art_id`, `art_title`
+FROM `articles` 
+WHERE `art_status` = 'ativo' AND art_date <= NOW() AND art_author = '{$art['aut_id']}' AND art_id != '{$art['art_id']}'
+ORDER BY art_date DESC
+";
+$res = $conn->query($sql);
+if ($res->num_rows > 0) {
+
+    $artAuthor .= "<h4>Artigos do autor</h4><ul class=\"autor-articles\">";
+
+    while ($more = $res->fetch_assoc()) {
+
+        $artAuthor .= "<li><a href=\"/view.php?{$more['art_id']}\">{$more['art_title']}</a></li>";
+
+    }
+    
+    $artAuthor .= "</ul>";
+}
 
 /********** Seus codigos PHP terminam aqui **********/
 
@@ -43,13 +86,14 @@ require_once ('_header.php');
 
 ?>
 
-<article>    
+<article>
+
+    <?php echo $article ?>
 
 </article>
 
 <aside>
-    <h3>Sidebar</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque inventore, perferendis autem officia hic ducimus recusandae neque aliquid ullam minima ex officiis cum velit modi, repudiandae consequuntur nulla laborum porro?</p>
+<?php echo $artAuthor ?>
 </aside>
 
 <?php

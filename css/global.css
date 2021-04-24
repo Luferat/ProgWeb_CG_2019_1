@@ -20,6 +20,7 @@ body {
 a {
   color: steelblue;
   text-decoration: none;
+  transition: .2s;
 }
 
 a:hover {
@@ -226,4 +227,13 @@ footer {
   .license div {
     font-size: 1rem;
   }
+}
+
+/***** CSS de uso geral *****/
+
+/* Imagens responsivas */
+img.flush {
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
