@@ -149,6 +149,7 @@ INSERT INTO config (var, val) VALUES
 ('social_linkedin', 'http://linkedin.com/fuinhas'),
 ('social_facebook', 'http://facebook.com/fuinhas'),
 ('siteOwner', 'André Luferat'),
+('siteOwnerEmail', 'andre@luferat.net'),
 ('siteYear', '2021'),
 ('meta_author', 'André Luferat'),
 ('meta_description', 'Site sobre fuinhas, furões e afins.'),

@@ -237,3 +237,30 @@ img.flush {
   width: auto;
   height: auto;
 }
+
+/* Botões e formulários */
+button.primary {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+button.primary {
+  background: linear-gradient(rgb(31, 70, 102), rgb(103, 164, 214));
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.primary:hover {
+  background: linear-gradient(rgb(170, 45, 0), rgb(246, 125, 81));
+}
+
+button.block {
+  display: block;
+  width: 95%;
+  margin: auto;
+
+}

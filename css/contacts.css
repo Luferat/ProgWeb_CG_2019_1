@@ -1,0 +1,59 @@
+#contact {
+    display: block;
+}
+
+#contact label {
+    display: block;
+    padding: 0 0 0.3rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+#contact input, #contact textarea, #contact button {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+}
+
+#contact textarea {
+    height: 6rem;
+    resize: vertical;
+}
+
+#contact input:invalid, #contact textarea:invalid {
+    background: rgb(255, 207, 207);
+    border-bottom: 3px solid red;
+}
+
+#contact input:valid, #contact textarea:valid {
+    background: rgb(213, 255, 213);
+    border-bottom: 3px solid green;
+}
+
+#contact:invalid button {
+    /* pointer-events: none; */
+    background: linear-gradient(rgb(88, 88, 88), grey);
+    color: rgb(219, 219, 219);
+    cursor: not-allowed;
+}
+
+.advise {
+    font-size: 0.75rem;
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+#feedback {
+    display: none;
+}
+
+#feedback div {
+    display: table;
+    margin: auto;
+}

@@ -71,7 +71,7 @@ endforeach;
         <nav>
             <a href="/"><i class="fas fa-home fa-fw"></i><span>Início</span></a>
             <a href="/"><i class="fas fa-newspaper fa-fw"></i><span>Notícias</span></a>
-            <a href="/"><i class="fas fa-comments fa-fw"></i><span>Contatos</span></a>
+            <a href="/contacts.php"><i class="fas fa-comments fa-fw"></i><span>Contatos</span></a>
             <a href="/"><i class="fas fa-info-circle fa-fw"></i><span>Sobre</span></a>
         </nav>
 
