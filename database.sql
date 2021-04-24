@@ -14,7 +14,7 @@ USE fuinhas;
 CREATE TABLE authors (
     aut_id INT PRIMARY KEY AUTO_INCREMENT,
     aut_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    aut_name VARCHAR(127) NOT NULL,
+    aut_name VARCHAR(127) NOT NULL, 
     aut_image VARCHAR(255),
     aut_link VARCHAR(255),
     aut_email VARCHAR(255) NOT NULL,
@@ -143,10 +143,15 @@ INSERT INTO config (var, val) VALUES
 ('siteSlogan', 'Futuca onde não deve.'),
 ('siteLogo', '/img/logo_02.png'),
 ('favicon', '/favicon.png'),
-('social_facebook', 'http://facebook.com/fuinhas'),
-('social_youtube', 'http://youtube.com/fuinhas'),
-('social_twitter', 'http://twitter.com/fuinhas'),
+('templateCSS', '/css/global.css'),
 ('social_github', 'http://github.com/fuinhas'),
-('siteOwner', 'Joca da Silva'),
-('siteYear', '2021')
+('social_youtube', 'http://youtube.com/fuinhas'),
+('social_linkedin', 'http://linkedin.com/fuinhas'),
+('social_facebook', 'http://facebook.com/fuinhas'),
+('siteOwner', 'André Luferat'),
+('siteYear', '2021'),
+('meta_author', 'André Luferat'),
+('meta_description', 'Site sobre fuinhas, furões e afins.'),
+('meta_keywords', 'fuinha, furão, pet, exótico, mamífero'),
+('meta_copyright', '© 2021 André Luferat')
 ;

@@ -4,10 +4,18 @@
 
 </main>
 
+<?php
+// Formata data da licença (Copyright)
+$yToday = intval(date('Y'));
+$siteYear = intval($T['siteYear']);
+if ($yToday > $siteYear)
+    $siteYear .= " {$yToday}"; // "siteYear todayYear"
+?>
+
 <footer>
     <div class="license">
         <a href="/"><i class="fas fa-home fa-fw"></i></a>
-        <div>&copy; Copyright <?php echo $T['siteYear'] ?> <?php echo $T['siteOwner'] ?></div>
+        <div>&copy; Copyright <?php echo $siteYear ?> <?php echo $T['siteOwner'] ?></div>
         <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-fw"></i></a>
     </div>
     <div class="footer-menus">

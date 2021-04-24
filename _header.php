@@ -27,6 +27,14 @@ if ($T['pageJS'] == '') {
     $tagJS = "<script src=\"{$T['pageJS']}\"></script>\n";
 }
 
+// Processa meta tags, uma por vez
+$metaTags = '';
+foreach($T['meta_'] as $metaName => $metaContent ) :
+
+    $metaTags .= "\t<meta name=\"{$metaName}\" content=\"{$metaContent}\">\n";
+
+endforeach;
+
 ?><!DOCTYPE html>
 <html lang="pt-br">
 
@@ -34,10 +42,11 @@ if ($T['pageJS'] == '') {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php echo $metaTags ?>    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="<?php echo $T['templateCSS'] ?>">
     <link rel="icon" href="<?php echo $T['favicon'] ?>">
     <?php echo $tagCSS ?>
     <title><?php echo $tagTitle ?></title>
