@@ -52,17 +52,14 @@ while($data = $res->fetch_assoc()) {
         // Obtém lista de redes sociais
         $var = str_ireplace('social_', '', $data['var']);
         $T['social_'][$var] = $data['val'];
-
     } else if(substr($data['var'], 0, 5) == 'meta_') {
 
-        // Obtém lista de meta tags "name"
+        // Obtém lista de meta tags. Atributo "name"
         $var = str_ireplace('meta_', '', $data['var']);
-        $T['meta_'][$var] = $data['val'];
-        
+        $T['meta_'][$var] = $data['val'];        
     } else {
 
         // Todas as outras variáveis
         $T[$data['var']] = $data['val'];
-
     }
 }
