@@ -42,10 +42,10 @@ endforeach;
         </div>
         <div class="menu-tools">
             <ul>
-                <li><a href="/"><i class="fas fa-info-circle fa-fw"></i><span>Sobre <?php echo lcfirst($T['siteFullName']) ?></span></a></li>
-                <li><a href="/"><i class="fas fa-user-cog fa-fw"></i><span>Sobre o autor</span></a></li>
-                <li><a href="/"><i class="fas fa-comments fa-fw"></i><span>Faça contato</span></a></li>
-                <li><a href="/"><i class="fas fa-user-lock fa-fw"></i><span>Sua privacidade</span></a></li>
+                <li><a href="/abtview.php?1"><i class="fas fa-info-circle fa-fw"></i><span>Sobre <?php echo lcfirst($T['siteFullName']) ?></span></a></li>
+                <li><a href="/abtview.php?2"><i class="fas fa-user-cog fa-fw"></i><span>Sobre o autor</span></a></li>
+                <li><a href="/contacts.php"><i class="fas fa-comments fa-fw"></i><span>Faça contato</span></a></li>
+                <li><a href="/abtview.php?4"><i class="fas fa-user-lock fa-fw"></i><span>Sua privacidade</span></a></li>
             </ul>
         </div>
 

@@ -47,6 +47,10 @@ $article = <<<HTML
 
 HTML;
 
+// Altera o título da página
+$T['pageTitle'] = $art['art_title'];
+
+// Formata autor na sidebar
 $artAuthor = <<<HTML
 
 <h4 class="art-autor">

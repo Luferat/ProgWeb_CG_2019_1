@@ -31,7 +31,7 @@ a:hover {
 /* Fundo */
 
 body {
-  background-image: url(/img/bg_01.jpg);
+  /* background-image: url(/img/bg_02.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-color: darkgray;

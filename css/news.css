@@ -1,0 +1,10 @@
+.list-news {
+    padding: 0;
+    list-style: none;
+}
+
+.list-news li {
+    margin: .5rem;
+    border: 1px dotted grey;
+    padding: .5rem;
+}

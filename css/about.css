@@ -1,0 +1,41 @@
+article > small {
+    display: block;
+    text-align: right;
+  }
+  
+  .about {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  
+  .about img {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .about div {
+    padding: 0.5rem;
+  }
+  
+  .about h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .about:nth-child(even) {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .about:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .about:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  

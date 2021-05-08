@@ -49,6 +49,17 @@ endforeach;
     <link rel="stylesheet" href="<?php echo $T['templateCSS'] ?>">
     <link rel="icon" href="<?php echo $T['favicon'] ?>">
     <?php echo $tagCSS ?>
+    <style>
+        /* Altera a fonte padrão conforme tabela 'config' */
+        html, body {
+            font-family: <?php echo $T['siteFont'] ?>;
+        }
+
+        /* Altera a imagem de fundo conforme a tabela 'config' */
+        body {
+            background-image: url('<?php echo $T['siteBackground'] ?>');
+        }
+    </style>
     <title><?php echo $tagTitle ?></title>
 </head>
 
@@ -69,10 +80,10 @@ endforeach;
         </header>
 
         <nav>
-            <a href="/"><i class="fas fa-home fa-fw"></i><span>Início</span></a>
-            <a href="/"><i class="fas fa-newspaper fa-fw"></i><span>Notícias</span></a>
+            <a href="/index.php"><i class="fas fa-home fa-fw"></i><span>Início</span></a>
+            <a href="/news.php"><i class="fas fa-newspaper fa-fw"></i><span>Notícias</span></a>
             <a href="/contacts.php"><i class="fas fa-comments fa-fw"></i><span>Contatos</span></a>
-            <a href="/"><i class="fas fa-info-circle fa-fw"></i><span>Sobre</span></a>
+            <a href="/about.php"><i class="fas fa-info-circle fa-fw"></i><span>Sobre</span></a>
         </nav>
 
         <main>
