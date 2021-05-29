@@ -1,4 +1,5 @@
 <?php
+
 /***** RODAPÉ DO TEMPLATE DAS PÁGINAS *****/
 ?>
 
@@ -22,22 +23,22 @@ if ($yToday > $siteYear)
 
         <div class="menu-social">
             <ul>
-<?php
+                <?php
 
-// Obtém lista de redes sociais, uma por vez
-foreach($T['social_'] as $socialName => $socialLink ) :
+                // Obtém lista de redes sociais, uma por vez
+                foreach ($T['social_'] as $socialName => $socialLink) :
 
-    // Formata ícone do item
-    $socialIcon = "<i class=\"fab fa-{$socialName} fa-fw\"></i>";
+                    // Formata ícone do item
+                    $socialIcon = "<i class=\"fab fa-{$socialName} fa-fw\"></i>";
 
-    // Formata nome do item
-    $socialFaceName = ucfirst($socialName);
+                    // Formata nome do item
+                    $socialFaceName = ucfirst($socialName);
 
-    // Exibe item na lista
-    echo "\t<li><a href=\"{$socialLink}\" target=\"_blank\">{$socialIcon}<span>{$socialFaceName}</span></a></li>\n";
+                    // Exibe item na lista
+                    echo "\t<li><a href=\"{$socialLink}\" target=\"_blank\">{$socialIcon}<span>{$socialFaceName}</span></a></li>\n";
 
-endforeach;
-?>
+                endforeach;
+                ?>
             </ul>
         </div>
         <div class="menu-tools">
@@ -54,8 +55,22 @@ endforeach;
 
 </div>
 
+<?php // SDK do Firebase ?>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+<?php // Authentication ?>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+
+<?php // Configuração do Firebase ?>
+<script src="/js/fbconfig.js"></script>
+
+<?php // jQuery ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<?php // JavaScript global ?>
 <script src="/js/global.js"></script>
+
+<?php // JavaScript da página ?>
 <?php echo $tagJS ?>
 
 </body>

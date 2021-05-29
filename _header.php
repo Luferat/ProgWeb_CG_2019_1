@@ -76,6 +76,7 @@ endforeach;
                 <?php echo $T['siteName'] ?>
                 <small><?php echo $T['siteSlogan'] ?></small>
             </h1>
+            <div id="userData"></div>
 
         </header>
 
